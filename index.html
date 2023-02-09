@@ -10,15 +10,26 @@
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Flaticon Icons-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Livvic:wght@300&family=Lobster&family=Montserrat&family=Noto+Color+Emoji&family=Raleway&family=Unbounded:wght@300&display=swap');
+    </style>
 
     <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../media/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon-16x16.png">
-    <link rel="manifest" href="../media/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,16 +37,436 @@
  
     <!-- Custom JS -->
     <script type="text/javascript" src="index.js"></script>
+
+    <style>
+
+
+    </style>
 </head>
 
 <body>
-    <footer>
-        <a href="links.html">Attibution for vectors and other media</a>
-    </footer>
+    
+    <!-- Intro Section -->
+
+    <section id="intro">
+
+        <div class="intro-div base justify-content-center">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="media/fire-64.png" style="height: 20%; width: 20%;" class="mb-2" alt="">campFiRe
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mb-2 ms-auto me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active me-2" aria-current="page" href="#intro">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#feta">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-2" href="#price">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#abt">About</a>
+                            </li>
+                        </ul>
+                        <div class="btn-row">
+                            <a href="" role="button" type="button" class="btn btn-lg btn-outline-primary">Log In<i class="bi bi-arrow-right-short"></i></a>
+                            <a href="" role="button" type="button" class="btn btn-lg btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row row1 contain">
+
+                <div class="col-lg-7 mb-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide ms-auto me-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <img src="media/online.jpg" class="intro-img1 welcomeimg" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <img src="media/gather1.png" class="intro-img2 welcomeimg" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <img src="media/meet.png " class="intro-img3 welcomeimg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-3">
+                    <p class="heading-p">Getting people together, <span class="span1">faster</span> and <span class="span2">easier.</span></p>
+                    <p class="headesc">Our intuitive, feature-packed software disregards all the hassles of getting your colleagues, friends and family
+                        in one place. Gather round the fire, from all accross the globe!
+                    </p>
+                    <div class="row">
+                        <div class="btn-row col-lg-12">
+                            <a href="" role="button" type="button" class="btn btn-lg btn-primary ms-6 mt-3">Start the Fire! <i class="bi bi-arrow-right-short"></i></a>
+                            <a href="" role="button" type="button" class="btn btn-lg btn-outline-primary ms-3 mt-3">campFiRe? What's that?</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr class="ms-auto me-auto bodyborder mb-5">
+    </section>
+
+    
+    <!-- Features Section -->
+
+    <section id="features">
+
+
+
+        <h4 class="feat-header2 mt-5" id="feta">We keep you from getting hassled when making plans.</h4>
+        <p class="featsubb">In three main ways:</p>
+
+        <div class="feat contain">
+
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                    role="tab" aria-controls="nav-home" aria-selected="true" style="color: #39288e;">
+                        <i class="fi fi-rs-box"></i>
+                    </button>
+                    <button class="nav-link" id="nav-profie-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+                        role="tab" aria-controls="nav-profile" aria-selected="false" style="color: #3c79f5">
+                        <i class="fi fi-rs-comments"></i>
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+                        role="tab" aria-controls="nav-contact" aria-selected="false" style="color: #d47f64;">
+                        <i class="fi fi-rs-time-twenty-four"></i>
+                    </button>
+                    
+                </div>
+            </nav>
+            <div class="tab-content justify-content-center" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="col-lg-10 feat1 mt-5 ms-auto me-auto">
+                    
+                        <div class="row mb-6">
+                            <div class="col-lg-6 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                                <img src="media/inbox.gif" alt="" class="featimg">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="feat-head1 mb-3 mt-5">Declutter those inboxes!</h2>
+                    
+                                <p class="featdesc ms-auto" style="width: 85%;">
+                                    Our software intuitively handles
+                                    invites and requests for your formal and informal gatherings
+                                    to help your email inboxes and direct messages carry much less baggage.
+                                </p>
+                                <a href="" class="learnlink mt-3" style="color: #39288e;">Learn more</a>
+                            </div>
+                    
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="col-lg-10 feat2 mb-6 mt-5 ms-auto me-auto">
+                    
+                        <div class="row">
+                    
+                            <div class="col-lg-6 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                                <img src="media/gather2.gif" alt="" class="featimg">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="feat-head2 mb-3 me-3 mt-5">"Marshmallows or Smores?"</h2>
+                    
+                                <p class="featdesc ms-auto" style="width: 85%;">Keep the fire burning with your
+                                    campers through calls, video interactions and the latest
+                                    messaging technology. Find your campers in the Camper Catalog
+                                    and find other campers who know their tent as well with Discover.
+                                </p>
+                                
+                                <a href="" class="learnlink mt-3" style="color: #3c79f5;">Learn more</a>
+
+                            </div>
+                    
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <div class="col-lg-10 feat3 mb-6 mt-5 ms-auto me-auto">
+                    
+                        <div class="row">
+                            <div class="col-lg-6 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                                <img src="media/Work time.gif" alt="" class="featimg">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="feat-head3 mb-3 mt-5">Your Time. Your Rules.</h2>
+                    
+                                <p class="featdesc ms-auto" style="width: 80%;">Never feel like you've been boxed up.
+                                    Accept, Decline and Block appointment requests as you see fit.
+                                    Place Lag Times in your schedule for when and when not
+                                    cancellations and rescheduling requests can be made.
+                                </p>
+
+                                <a href="" class="learnlink mt-3" style="color: #f49d1a;">Learn more</a>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <h3 class="droptext mt-5" data-bs-toggle="collapse" href="#collapseExample" 
+                role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-title="Click the button!">
+                That's not all though..        <a class="btn btn-sm btn-outline-primary dropbtn" data-bs-toggle="tooltip" data-bs-title="Click the button!"><i class="fa-solid fa-angles-down"></i></a>
+            </h3>
+            <p class="text-muted mb-5 ">More of our first-class features.</p>
+            <div class="collapse" id="collapseExample">
+                <div class="row justify-content-center">
+                    <div class="feat-body col-lg-3 col-md-6 mb-4 ">
+                        <div class="shadow-sm p-3 bg-body-tertiary rounded feat-card">
+                            <img class="featimg-2" src="media/Schedule.gif" alt="" style="width: 85%; height: 85%;">
+                            <h4 class="feat-caption1" data-bs-toggle="collapse" href="#featdrop1" 
+                            role="button" aria-expanded="true" aria-controls="featdrop1">
+                                Interactive Calendar
+                            </h4>
+                            <div class="featdrop1" id="featdrop1">
+                                <p class="featdesc-1">An intuitive calendar that keeps all your bookings in one place.
+                                </p>
+                                <a href="" class="btn learn1"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-body col-lg-3 col-md-6 mb-4">
+                        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded feat-card">
+                            <img class="featimg-2" src="media/party.png" alt="">
+                            <h4 class="feat-caption4" data-bs-toggle="collapse" href="#featdrop4" role="button" aria-expanded="true"
+                                aria-controls="featdrop4">
+                                Party Master
+                            </h4>
+                            <div class="featdrop4" id="featdrop4">
+                                <p class="featdesc-1">Work out the logistics, the events and even some catering for every gathering!
+                                </p>
+                                <a href="" class="btn learn4"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-body col-lg-3 col-md-6 mb-4">
+                        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded feat-card">
+                            <img class="featimg-2" src="media/customize.gif" alt="">
+                            <h4 class="feat-caption2" data-bs-toggle="collapse" href="#featdrop2" role="button" aria-expanded="true"
+                                aria-controls="featdrop2">
+                                No Holds Barred
+                            </h4>
+                            <div class="featdrop2" id="featdrop2">
+                                <p class="featdesc-1 ms-2 me-2">All bits of the campFiRe app are fitted to accommodate your personal preferences, from smart themes to layouts and
+                                fonts.
+                                </p>
+                                <a href="" class="btn learn2 mb-3"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-body col-lg-3 col-md-6 mb-4">
+                        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded feat-card">
+                            <img class="featimg-2" src="media/calm.png" alt="">
+                            <h4 class="feat-caption3" data-bs-toggle="collapse" href="#featdrop3" role="button" aria-expanded="true"
+                                aria-controls="featdrop3">
+                                Keep Calm and Be Aware
+                            </h4>
+                            <div class="featdrop3" id="featdrop3">
+                                <p class="featdesc-1">Enable and configure push notifications for yourself as well as other campers, so you avoid no-shows and stay aware of
+                                important and upcoming camps to attend.
+                                </p>
+                                <a href="" class="btn learn3"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            
+            <hr class="ms-auto me-auto bodyborder" style="color: #39288e;">
+        </div>
+
+    </section>
+
+    <section id="pricing">
+
+
+        <h2 class="pricehead mb-2" id="price">Let's Talk about A Different Kind of Plans..</h2>
+        <p class="text-muted pricesub">A variety of pricing options for every user. </p>
+        <div class="prices contain">
+
+            <div class="row pricebody">
+                <div class="col-lg-3 mt-3 mb-4">
+                    <div class="card card-body p-card1">
+                        <h2 class="card-title text-muted">campFiRe Social</h2>
+                        <p class="card-subtitle mb-3 text-muted">The extroverts need this one.</p>
+                        <p class="pricetag1 mb-3 text-muted">$6/mo</p>
+                        <hr class="priceborder me-auto ms-auto">
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <a class="btn btn-primary disabled pricebtn ms-auto me-auto mt-4" role="button" aria-disabled="true">Comin' Soon</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-card2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                        <h2 class="card-title" style="font-size: 2.2rem !important;">campFiRe Basic</h2>
+                        <p class="card-subtitle mb-3 text-muted" style="font-size: 1.4rem;">The plan with the essentials.</p>
+                        <p class="pricetag2 mb-3">Free</p>
+                        <hr class="me-auto ms-auto priceborder">
+                        <p class="check-sub" style="font-size: 1.2rem;"><i class="fa-solid fa-circle-check"></i> Nothin' definitive yet.</p>
+                        <p class="check-sub" style="font-size: 1.2rem;"><i class="fa-solid fa-circle-check"></i> Nothin' definitive yet.</p>
+                        <p class="check-sub" style="font-size: 1.2rem;"><i class="fa-solid fa-circle-check"></i> Nothin' definitive yet.</p>
+                        <a class="btn btn-primary bigger ms-auto me-auto mt-4" role="button">Sign Up</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-3">
+                    <div class="card card-body p-card3">
+                        <h2 class="card-title text-muted">campFiRe Business</h2>
+                        <p class="card-subtitle mb-3 text-muted">The best plan for organizations and freelancers.</p>
+                        <p class="pricetag2 mb-3">$11/mo</p>
+                        <hr class="me-auto ms-auto priceborder">
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.</em></p>
+                        <a class="btn btn-primary disabled pricebtn ms-auto me-auto mt-4" role="button" aria-disabled="true">Comin' Soon</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-7">
+                    <div class="card card-body p-card4">
+                       <h2 class="card-title text-muted">The Globetrotter's Plan</h2>
+                        <p class="card-subtitle mb-3 text-muted">For the people who need a little bit of everything from us.</p>
+                        <p class="pricetag2 mb-3">$17/mo</p>
+                        <hr>
+                        <p class="check-sub text-muted temporarysub mt-2"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.<em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.<em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.<em></p>
+                        <p class="check-sub text-muted temporarysub"><em><i class="fa-solid fa-circle-check text-muted"></i> Nothin' definitive yet.<em></p>
+                        <a class="btn btn-primary disabled bigger ms-auto me-auto mt-4" role="button" aria-disabled="true">Comin' Soon</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="ms-auto me-auto bodyborder" style="color: #39288e;">
+    </section>
+
+    <section id="about" >
+
+        <div class="about contain">
+
+            <h5 class="abthead" id="abt">Meet The Team</hh5>
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active mt-5">
+                        <img src="media/programmer.png" class="mb-5 mt-5 teamimg1" alt="...">
+                        <h5 class="member">Member1</h5>
+                        <h5 class="member-sub text-muted mb-3">position</h5>
+            
+                        <h5 class="contact">blahblah@gmail.com | +234 489 3744 389</h5>
+                        
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <img src="media/programmer.png" class="mb-5 mt-5 teamimg2" alt="...">
+                        <h5 class="member">Member2</h5>
+                        <h5 class="member-sub text-muted mb-3">position</h5>
+            
+                        <h5 class="contact">blahblah@gmail.com | +234 489 3744 389</h5>
+                        
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <img src="media/programmer.png" class="mb-5 mt-5 teamimg3" alt="...">
+                        <h5 class="member">Member3</h5>
+                        <h5 class="member-sub text-muted mb-3">position</h5>
+            
+                        <h5 class="contact">blahblah@gmail.com | +234 489 3744 389</h5>
+                        
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <img src="media/programmer.png" class="mb-5 mt-5 teamimg3" alt="...">
+                        <h5 class="member">Member4</h5>
+                        <h5 class="member-sub text-muted mb-3">position</h5>
+                    
+                        <h5 class="contact">blahblah@gmail.com | +234 489 3744 389</h5>
+                    
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev" style="color: #39288e !important;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next" style="color: #39288e !important;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="color: #39288e !important;""></span>
+                    <span class="visually-hidden" style="color: #39288e !important;"">Next</span>
+                </button>
+            </div>
+
+        </div>
+        
+
+
+    </section>
+
+    <section id="cta">
+
+        <div class="cta contain">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <img src="media/campfire.png" alt="" class="campimg shadow-sm">
+                </div>
+                <div class="col-lg-6 mt-auto mb-auto">
+                    <h1 class="ctahead">Gather 'round the fire.</h1>
+                    <p class="cta-sub ">Get started with campFiRe today!</p>
+                </div>
+                
+
+            </div>     
+        </div>
+        <footer class="foot">
+            <div class="socials mt-5">
+                <button role="button" class="btn"><i class="fa-brands fa-linkedin-in ms-auto me-auto"></i></button>
+                <button role="button" class="btn"><i class="fa-brands fa-twitter ms-auto me-auto"></i></button>
+                <button role="button" class="btn"><i class="fa-brands fa-instagram ms-auto me-auto"></i></button>
+                <button role="button" class="btn"><i class="fa-brands fa-tiktok ms-auto me-auto"></i></button>
+                <button role="button" class="btn"><i class="fa-regular fa-envelope ms-auto me-auto"></i></button>
+                <p class="copyright">© Copyright 2023 campFiRe inc.</p>
+            </div>
+            <a href="links.html" class="footerlink ms-3 mb-5">Attibution for vectors and other media</a>
+        </footer>
+
+    </section>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

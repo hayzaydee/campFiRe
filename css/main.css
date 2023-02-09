@@ -1,0 +1,444 @@
+/* General Styles */
+body{
+
+}
+
+p{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.4rem;
+    color: #39288e !important;
+}
+
+h1, h2, h3, .heading-p{
+    font-family: 'Unbounded', cursive;
+    color: #39288e !important;
+    font-weight: 1000;
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 4rem !important;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: #39288e !important;
+  border-color: #39288e !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover{
+  background-color: #4a36b2 !important;
+  border-color: #4a36b2 !important;
+}
+
+.heading-p, .headesc{
+    text-align: right;
+}
+
+.btn{
+    font-size: 0.95rem !important;
+    border-radius: 0.75rem !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 300 !important;
+    text-align: center !important;
+}
+
+
+.bodyborder{
+    border-style: none;
+    border-top-style: dotted !important;
+    border-color: #39288e !important;
+    border-width: 0.8rem !important;
+    width: 10%;
+    background-color: white;
+    text-align: center !important; 
+    padding-bottom: 5%;
+}
+/* Intro Section*/
+
+#intro{
+    background-color: #ffffff;
+    color: #39288e;
+}
+
+.navbar{
+    background-color: #ffffff;
+}
+
+.navbar a{
+    color: #39288e;
+}
+
+.nav-link{
+    font-family: 'Josefin Slab', serif !important;
+    font-size: 1.3rem !important;
+    text-decoration: none !important;
+}
+
+.navbar-toggler{
+    color: #39288e;
+}
+.nav-img{
+    height: 2rem;
+    width: 2rem;
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 1.7rem !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: #39288e;
+}
+
+ul{
+    margin-left: 25rem;
+}
+
+.base{
+    padding: 3%;
+}
+
+.contain{
+    padding: 6% 5%;
+}
+
+.btn-outline-light{
+    color: #39288e;
+}
+
+.welcomeimg{
+    height: 70%;
+    width: 70%;
+    /* margin-left: 1rem !important; */
+}
+
+.btn-row{
+    text-align: center !important;
+}
+
+.span1{
+    color: #39B5E0;
+}
+
+.span2{
+    text-decoration: underline;
+    color: #F49D1A;
+}
+/* Features Section */
+
+.feat{
+    text-align: center;
+}
+
+.feat-header2{
+    text-align: center;
+    color: #39288e;
+    font-size: 2.4rem;
+    font-family: 'Unbounded', cursive;
+}
+.featsubb{
+    text-align: center;
+    color: #39288e;
+}
+
+.feat1, .feat2, .feat3{
+    padding-bottom: 3rem;
+}
+
+.feat-head1, .feat-head2, .feat-head3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #39288e !important;
+    text-align: right;
+}
+
+.featdesc{
+    text-align: right;
+}
+
+.feat-head2{
+    color: #39B5E0 !important;
+ }
+
+.feat-head3{
+    color: #F49D1A !important;
+}
+
+.featimg{
+    border-radius: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.learnlink{
+    text-align: right !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    margin-left: 27rem !important;
+}
+
+.learnlink:hover{
+    color: #4a36b2;
+}
+
+.droptext{
+    font-size: 1.7rem !important;
+    color:  #39288e  !important;
+}
+
+.dropbtn{
+    border-color: #645CBB!important;
+    color: #645CBB !important;
+}
+
+.dropbtn:hover{
+    color: #ffffff !important;
+}
+
+.droptext:hover{
+    color:#3C79F5!important;
+    border-color: #3C79F5!important;
+}
+
+.featimg-2{
+    width: 90%;
+    height: 90%;
+}
+
+.feat-caption1{
+    font-size: 1.3rem !important;
+    font-family: 'Unbounded', cursive;
+    color: #10A19D;
+}
+
+.feat-caption2{
+    font-size: 1.4rem !important;
+    font-family: 'Unbounded', cursive;
+    color:  #F49D1A 
+}
+
+.feat-caption3{
+    font-size: 1.4rem !important;
+    font-family: 'Unbounded', cursive;
+    color: #DC0F4C;
+}
+
+.feat-caption4{
+    font-size: 1.4rem !important;
+    font-family: 'Unbounded', cursive;
+    color: #39B5E0;
+}
+
+.featdesc-1{
+    font-size: 1.15rem;
+}
+
+
+.learn1{
+    background-color: #92E3A9 !important;
+    color: white !important;
+}
+
+.learn2{
+    background-color: #F49D1A !important;
+    color: white !important;
+}
+
+.learn3{
+    background-color: #DC0F4C !important;
+    color: white !important;
+}
+
+.learn4{
+    background-color: #39B5E0 !important;
+    color: white !important;
+}
+
+
+
+/* Price Section */
+
+.p-card1, .p-card2, .p-card3, .p-card4{
+    text-align: center;
+
+}
+
+.fa-circle-check{
+    color: #10A19D;
+}
+
+.priceborder{
+    width: 80%;
+}
+
+.pricehead{
+    text-align: center;
+    font-size: 2.6rem !important;
+}
+
+.pricesub{
+    text-align: center;
+}
+
+.card-title{
+    font-family: 'Raleway', cursive;
+    font-size: 1.8rem;
+}
+
+.card-subtitle{
+    font-size: 1.3rem;
+}
+
+.temporarysub{
+    font-size: 1.1rem;
+}
+
+.pricebtn{
+    width: 50%;
+}
+
+.bigger{
+    width: 40%;
+    font-size: 1.3rem !important;
+}
+
+
+
+/* About Section */
+
+.about{
+    background-color: #ffffff;
+    text-align: center;
+    color: #39288e ;
+    font-style: normal !important;
+}
+
+.teamimg1, .teamimg2, .teamimg3{
+    border-radius: 50%;
+    width: 12%;
+    height: 12%;
+    background-color: rgb(124, 122, 122);
+}
+
+.abthead{
+    font-family: 'Unbounded', cursive;
+    font-size: 2.8rem !important;
+    font-weight: 500;
+
+}
+
+.member{
+    font-family: 'Raleway', cursive;
+    font-size: 1.6rem;
+}
+
+.member-sub{
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1rem;
+}
+
+.contact{
+    font-family: 'Livvic', cursive;
+    font-size: 1.3rem;
+}
+
+
+
+/* CTA Section */
+#cta{
+     background: url(../media/bg.png);
+}
+
+.cta{
+    color: white !important;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 0 !important;
+    padding-left: 2% !important;
+    padding-top: 2%;
+}
+
+.ctahead{
+    margin-top: 2.8rem !important;
+    font-size: 3rem !important;
+}
+
+ .ctahead, .cta-sub{
+    color: #ffffff !important;
+    text-align: right;
+ }
+
+.campimg{
+    margin-top: 2.8rem !important;
+    width: 700px;
+    height: 600px;
+}
+
+.copyright{
+    color: #ffffff !important;
+    font-size: 1.1rem;
+}
+
+.fa-brands, .fa-regular{
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+    margin: 1.5rem 0.3rem;
+}
+
+.foot{
+    font-style: normal;
+    color: #ffffff !important;
+}
+
+.socials{
+    text-align: center; 
+}
+
+.footerlink{
+    color: #ffffff;
+    margin-left: 27rem !important;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 990px) {
+  
+    .intro-img{
+        margin-left: 4.3rem !important;
+    }
+
+    .heading-p, .headesc{
+        text-align: center !important;
+   }
+
+
+    .heading-p{
+        font-size: 3rem !important;
+        text-align: center !important;
+    }
+
+    .featimg{
+        width: 70%;
+        height: 70%;
+    }
+
+
+    .featdesc, .feat-head1, .feat-head2, .feat-head3{
+        text-align: center !important;
+    }
+
+    .feat1, .feat2{
+        padding-bottom: 0;
+    }
+
+    .featdesc, .learnlink{
+        margin: 0 !important;
+    }
+}
