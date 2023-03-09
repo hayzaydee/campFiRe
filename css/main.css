@@ -6,12 +6,12 @@ body{
 p{
     font-family: 'Josefin Slab', serif;
     font-size: 1.4rem;
-    color: #39288e !important;
+    color: #481380 !important;
 }
 
 h1, h2, h3, .heading-p{
     font-family: 'Unbounded', cursive;
-    color: #39288e !important;
+    color: #481380 !important;
     font-weight: 1000;
     font-size: 3rem;
 }
@@ -29,8 +29,8 @@ h3{
 }
 
 btn-primary, .btn-primary:active, .btn-primary:visited {
-  background-color: #39288e !important;
-  border-color: #39288e !important;
+  background-color: #481380 !important;
+  border-color: #481380 !important;
   color: #ffffff !important;
 }
 
@@ -45,7 +45,7 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 
 .btn{
     font-size: 0.95rem !important;
-    border-radius: 0.75rem !important;
+
     font-family: 'Raleway', sans-serif !important;
     font-weight: 300 !important;
     text-align: center !important;
@@ -55,7 +55,7 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 .bodyborder{
     border-style: none;
     border-top-style: dotted !important;
-    border-color: #39288e !important;
+    border-color: #481380 !important;
     border-width: 0.8rem !important;
     width: 10%;
     background-color: white;
@@ -66,7 +66,7 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 
 #intro{
     background-color: #ffffff;
-    color: #39288e;
+    color: #481380;
 }
 
 .navbar{
@@ -74,7 +74,7 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 }
 
 .navbar a{
-    color: #39288e;
+    color: #481380;
 }
 
 .nav-link{
@@ -84,18 +84,18 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 }
 
 .navbar-toggler{
-    color: #39288e;
+    color: #481380;
 }
 .nav-img{
     height: 2rem;
     width: 2rem;
 }
 .navbar-brand{
-    font-family: 'Lobster', cursive;
+    font-family: 'Carter One', cursive;
     font-size: 1.7rem !important;
     font-weight: bold;
     text-decoration: none;
-    color: #39288e;
+    color: #481380;
 }
 
 ul{
@@ -111,7 +111,7 @@ ul{
 }
 
 .btn-outline-light{
-    color: #39288e;
+    color: #481380;
 }
 
 .welcomeimg{
@@ -140,13 +140,13 @@ ul{
 
 .feat-header2{
     text-align: center;
-    color: #39288e;
+    color: #481380;
     font-size: 2.4rem;
     font-family: 'Unbounded', cursive;
 }
 .featsubb{
     text-align: center;
-    color: #39288e;
+    color: #481380;
 }
 
 .feat1, .feat2, .feat3{
@@ -156,7 +156,7 @@ ul{
 .feat-head1, .feat-head2, .feat-head3 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #39288e !important;
+    color: #481380 !important;
     text-align: right;
 }
 
@@ -191,7 +191,7 @@ ul{
 
 .droptext{
     font-size: 1.7rem !important;
-    color:  #39288e  !important;
+    color:  #481380  !important;
 }
 
 .dropbtn{
@@ -247,9 +247,21 @@ ul{
     color: white !important;
 }
 
+.learn1:hover{
+    background-color:  white  !important;
+    color:#92E3A9 !important;
+    border-color: #92E3A9 !important;
+}
+
 .learn2{
     background-color: #F49D1A !important;
     color: white !important;
+}
+
+.learn2:hover{
+    background-color: white !important;
+    color: #F49D1A !important;
+    border-color: #F49D1A !important;
 }
 
 .learn3{
@@ -257,12 +269,22 @@ ul{
     color: white !important;
 }
 
+.learn3:hover{
+    background-color: white !important;
+    color: #DC0F4C !important;
+    border-color: #DC0F4C !important;
+}
+
 .learn4{
     background-color: #39B5E0 !important;
     color: white !important;
 }
 
-
+.learn4:hover{
+    background-color: white !important;
+    color: #39B5E0 !important;
+    border-color: #39B5E0 !important;
+}
 
 /* Price Section */
 
@@ -271,7 +293,7 @@ ul{
 
 }
 
-.fa-circle-check{
+.fa-circle-check {
     color: #10A19D;
 }
 
@@ -317,7 +339,7 @@ ul{
 .about{
     background-color: #ffffff;
     text-align: center;
-    color: #39288e ;
+    color: #481380 ;
     font-style: normal !important;
 }
 
@@ -387,7 +409,7 @@ ul{
     font-size: 1.1rem;
 }
 
-.fa-brands, .fa-regular{
+.footerlogo{
     color: #ffffff !important;
     font-size: 1.1rem !important;
     margin: 1.5rem 0.3rem;
@@ -407,6 +429,94 @@ ul{
     margin-left: 27rem !important;
     font-size: 0.8rem;
 }
+
+
+/* LOGIN */
+
+
+#login-section{
+    text-align: center;
+    color: #481380;
+}
+
+.passrecover{
+    color: #481380;
+}
+
+label{
+    font-family: 'Raleway', cursive;
+    font-weight: 500;
+}
+
+.form-text{
+    font-family: 'Livvic', cursive;
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+.login-head{
+    font-weight: 600;
+    font-family: 'Carter One', cursive;
+    font-size: 2.6rem;
+}
+
+.login-sub, .signup-rem{
+   font-family: 'Raleway', cursive;
+   font-size: 1rem;
+}
+
+
+/* campFiRe Basic Sign-Up */
+
+.input-group-text, option, .form-select{
+    font-family: 'Raleway', cursive;
+}
+
+option{
+    color: #4a36b2;
+}
+
+#signup-basic{
+    text-align: center;
+    color: #481380;
+}
+
+.basic-head{
+    font-family: 'Carter One', cursive;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.form-check{
+    color: #481380;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left !important;
+}
+
+.input-group-text{
+    color: #481380;
+
+}
+
+form, .s-up-basicdesc{
+    padding-top: 5%;
+}
+
+.s-up-basicdesc{
+    margin-left: 8rem;
+}
+
+.basic-terms{
+    font-size: 1.15rem;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 990px) {
   
