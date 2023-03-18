@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>campFiRe</title>
+    <title>Camper Profile</title>
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
@@ -43,557 +45,690 @@
 
     </style>
 </head>
-<body>
-    
-    <div class="profile contain">
 
-        <div class="row justify-content-center">
+<body class="profile-body">
 
-            <div class="col-6">
-                <img src="" class="profile-img" alt="">
-            </div>
-            <div class="col-6">
-                <h3 class="user">David Arochukwu</h3>
-                <p class="username"></p>
-            </div>
-
-            <div class="col-12">
+    <nav class="navbar navbar-expand-lg navbar1 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
+                <p class="text-muted brand-sub"></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex me-auto ms-auto" role="search" style="padding-top: 0 !important;">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"
+                        style="font-family: 'Livvic', cursive;">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
                 <div class="hstack gap-3">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-snapchat"></i>
-                    <i class="fa fa-instagram"></i>
+                    <div>
+                        <a href="" style="text-decoration: none;" class="set">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </nav>
 
-            <hr>
+    <div class="row">
 
-            <h3>Joined campFiRe October 2020 | <i class="fa fa-circle"></i> At a campFiRe</h3>
-
-            <div class="col-12">
-                <div class="hstack gap-4">
-                    <button type="button" class="btn btn-outline-warning"><i class="fa-solid fa-circle-plus"></i> New campFiRe</button>
-                    <div class="btn-group">
-                        <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mute
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="" class="">5 hours</a></li>
-                            <li><a href="" class="">1 Day</a></li>
-                            <li><a href="" class="">1 Week</a></li>
-                            <li><a href="" class="">Custom</a></li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-outline-danger">Block Requests</button>
-                </div>
-
+        <div class="col-2">
+            <div class="navigation-side" style="float: left;">
+                <nav class="nav flex-column mt-4">
+                    <p class="ms-2" style="color: white !important;">26/04/2023 | <span>10:44 am</span></p>
+                    <hr>
+                    <a href="" class="nav-link active mb-2" aria-current="page"><i class="fa-solid fa-table-columns"></i>
+                        Dashboard</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-calendar-check"></i> Schedule</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-address-card"></i> Camper Catalog</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-campground"></i> Recents</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-inbox"></i> Inbox</a>
+                    <hr>
+                    <p style="color: white !important; font-size: 0.8rem; ">©2023 campFiRe inc. 1.00</p>
+                </nav>
             </div>
+        </div>
 
-            <h3 class="schedule-head">Schedule</h3>
-
-            <div class="btn-group col-6">
-                <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Show for:
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="" class="">1 week</a></li>
-                    <li><a href="" class="">2 weeks</a></li>
-                    <li><a href="" class="">1 month</a></li>
-                    <li><a href="" class="">Custom</a></li>
-                </ul>
-            </div>
-
-            <div class="row justify-content-center">
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Mon</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00</p>
-
-                    <p>
-                        <i class="fa-solid fa-circle-plus"></i> | 
-                        <a data-bs-toggle="collapse" href="#monday" role="button" aria-expanded="false" aria-controls="monday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a> 
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Tue</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#tuesday" role="button" aria-expanded="false" aria-controls="tuesday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Wed</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#wednesday" role="button" aria-expanded="false" aria-controls="wednesday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Thu</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#thursday" role="button" aria-expanded="false" aria-controls="thurday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Fri</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#friday" role="button" aria-expanded="false" aria-controls="friday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Sat</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#saturday" role="button" aria-expanded="false" aria-controls="saturday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-3 body-rounded">
-                    <p class="day">Sun</p>
-                    <p class="date text-muted">7/03/24</p>
-                    <hr>
-                
-                    <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
-                    <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today (31%)</p>
-                    <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00 and 12:00
-                    </p>
-                
-                    <p>
-                        <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
-                        <a data-bs-toggle="collapse" href="#sunday" role="button" aria-expanded="false" aria-controls="sunday">
-                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="monday">
-                        <div class="card">
-
-                            <div class="card-header">
-                                <p class="day-lg">Monday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp1 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp2 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp3 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li> 
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20</p>
-                                    </li>
-                                </ul>
-                            </div> 
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="tuesday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Tuesday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp4 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp5 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp6 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="wednesday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Wednesday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp7 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp8 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp9 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="thursday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Thursday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp10 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp11 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp12 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="friday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Friday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp13 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp14 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp15 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="saturday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Saturday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp16 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp17 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp18 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="sunday">
-                        <div class="card">
-                
-                            <div class="card-header">
-                                <p class="day-lg">Sunday</p>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="camp7 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp8 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="camp9 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <p class="availability-lg">Free:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 09:00 - 12:00
-                                        </p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i> 14:00 - 15:20
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                
-                        </div>
-                
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
+        <div class="col-9">
+            <div class="profile contain mb-2 mt-3 bg-body-tertiary rounded shadow">
+            
+                <div class="row justify-content-center">
+                    <p class="page">Profile</p>
+                    
+            
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-6">
                             <div class="row">
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i>  <i class="fa-solid fa-ban"></i></p>
+                                <div class="col-4">
+                                    <img src="media/man.png" class="profile-img" alt="" style="height: 140px; width: 140px;">
                                 </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                <div class="col-8">
+                                    <h3 class="user">David, Arochukwu</h3>
+                                    <p class="username"><span class="me-3">@davearochukwu</span>  |  <span class="ms-3">+1 575 998 90</span></p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+            
+                    <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+            
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-10">
+                            <div class="hstack">
+                                <h3 class="est text-muted">Joined campFiRe October 2020</h3>
+                                <div class="ms-auto me-auto text-muted" >
+                                    <p>|</p>
+                                </div>
+                                <div class="ms-auto">
+                                    <h3 class="indicator-head">
+                                        <i class="fa fa-circle indicator me-3"></i>At a campFiRe
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-6">
+                            <div class="hstack gap-5">
+                                <button type="button" class="btn  btn-sm btn-outline-success"><i class="fa-solid fa-circle-plus"></i> New
+                                    campFiRe</button>
+                                <div class="btn-group">
+                                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-bell-slash"></i> Mute
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="">5 hours</a></li>
+                                        <li><a href="" class="">1 Day</a></li>
+                                        <li><a href="" class="">1 Week</a></li>
+                                        <li><a href="" class="">Custom</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-outline-danger btn-sm"><i class="fa-solid fa-ban"></i>  Block Requests</button>
+                            </div>
+                        
+                        </div>
+                    </div>
+            
+                    <h3 class="schedule-head mb-5">Schedule</h3>
+            
+                    <div class="row justify-content-center">
+            
+                        <div class="col-5 bg-body-tertiary rounded shadow mb-3">
+                            <p class="day" style="color: #481830 !important;">Mon</p>
                             
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire me-2"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent me-2"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line me-2"></i> Most availible between 09:00
+                                and 12:00</p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#monday" role="button" aria-expanded="false"
+                                    aria-controls="monday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
                         </div>
-                        <div class="carousel-item">
 
-                            <div class="row">
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item">
-
-                            <div class="row">
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                                <div class="col-4 body-rounded">
-                                    <img src="" alt="" class="profile-img">
-                                    <p class="camper-name">Alamu Salim</p>
-                                    <p class="text-muted camper-username">@salamu</p>
-                                    <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
-                                </div>
-                            </div>
+                        
+                        <div class="col-5 bg-body-tertiary rounded shadow ms-5 mb-3">
+                            <p class="day">Tue</p>
                             
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#tuesday" role="button" aria-expanded="false"
+                                    aria-controls="tuesday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
                         </div>
+                        
+                        <div class="row justify-content-center expand-row">
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="monday">
+                                    <div class="card">
+                        
+                                        <div class="card-header">
+                                            <p class="day-lg">Monday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp1 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp2 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp3 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="tuesday">
+                                    <div class="card">
+                        
+                                        <div class="card-header">
+                                            <p class="day-lg">Tuesday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp4 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp5 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp6 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-5 bg-body-tertiary rounded shadow mb-3">
+                            <p class="day">Wed</p>
+                            
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#wednesday" role="button" aria-expanded="false"
+                                    aria-controls="wednesday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
+                        </div>
+                                   
+                        <div class="col-5 bg-body-tertiary rounded shadow ms-5 mb-3">
+                            <p class="day">Thu</p>
+                            
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#thursday" role="button" aria-expanded="false"
+                                    aria-controls="thurday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
+                        </div>
+                        
+                        <div class="row justify-content-center expand-row">
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="wednesday">
+                                    <div class="card">
+                        
+                                        <div class="card-header">
+                                            <p class="day-lg">Wednesday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp7 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp8 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp9 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="thursday">
+                                    <div class="card">
+                        
+                                        <div class="card-header">
+                                            <p class="day-lg">Thursday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp10 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp11 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp12 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-5 bg-body-tertiary rounded shadow mb-3">
+                            <p class="day">Fri</p>
+                            
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#friday" role="button" aria-expanded="false"
+                                    aria-controls="friday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
+                        </div>
+            
+                        <div class="col-5 bg-body-tertiary rounded shadow ms-5 mb-3">
+                            <p class="day">Sat</p>
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#saturday" role="button" aria-expanded="false"
+                                    aria-controls="saturday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="row justify-content-center expand-row">
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="friday">
+                                    <div class="card">
+                            
+                                        <div class="card-header">
+                                            <p class="day-lg">Friday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp13 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp14 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp15 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="saturday">
+                                    <div class="card">
+                            
+                                        <div class="card-header">
+                                            <p class="day-lg">Saturday</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="camp16 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp17 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="camp18 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p class="availability-lg">Free:</p>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        09:00 - 12:00
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                        14:00 - 15:20
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+                        
+            
+                        <div class="col-5 bg-body-tertiary rounded shadow mb-3">
+                            <p class="day">Sun</p>
+                            
+                            <p class="date text-muted">7/03/24</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                            <hr>
+            
+                            <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                            <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                (31%)</p>
+                            <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                and 12:00
+                            </p>
+            
+                            <p class="schedule-controls">
+                                <a href=""><i class="fa-solid fa-circle-plus"></i></a> |
+                                <a data-bs-toggle="collapse" href="#sunday" role="button" aria-expanded="false"
+                                    aria-controls="sunday">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="row justify-content-center expand-row mb-5">
+                            <div class="col-6">
+                                <div class="collapse multi-collapse" id="sunday">
+                                <div class="card">
+                        
+                                    <div class="card-header">
+                                        <p class="day-lg">Sunday</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <p class="camp7 booked"><i class="fa-solid fa-fire"></i> 16:00 | 45min</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p class="camp8 booked"><i class="fa-solid fa-fire"></i> 17:20 | 1hr</p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p class="camp9 booked"><i class="fa-solid fa-fire"></i> 19:00 | 30min</p>
+                                            </li>
+                                        </ul>
+                                        <hr>
+                                        <p class="availability-lg">Free:</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <p class="free1 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                    09:00 - 12:00
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p class="free2 availible-sm"><i class="fa-solid fa-tent-arrow-down-to-line"></i>
+                                                    14:00 - 15:20
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        
+                                </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+            
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            
+                    
+                    <h3 class="common-head mb-5">Common Campers</h3>
+
+                    <div class="row justify-content-center">
+            
+                        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+            
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                                <div class="carousel-item">
+            
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                        <div class="col-3 bg-body-tertiary rounded shadow-sm p-3 mb-5 ms-3 common">
+                                            <div class="row justify-content-center">
+                                                <div class="col-4">
+                                                    <img src="media/user.png" alt="" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <p class="camper-name">Alamu Salim</p>
+                                            <p class="text-muted camper-username">@salamu</p>
+                                            <p><i class="fa-solid fa-circle-plus"></i> <i class="fa-solid fa-ban"></i></p>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+            
+                    </div>
+            
                 </div>
-
+            
             </div>
-
         </div>
 
     </div>
 
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+    
 </body>
 
 

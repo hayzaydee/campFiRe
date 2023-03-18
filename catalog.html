@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>campFiRe</title>
+    <title>Camper Catalog</title>
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
@@ -44,172 +44,278 @@
     </style>
 </head>
 
-<body>
-    
-    <div class="catalog contain">
+<body class="catalog-body">
 
-        <nav class="nav flex-column">
-            <a class="nav-link active" aria-current="page" href="#">A</a>
-            <a class="nav-link" href="#">A</a>
-            <a class="nav-link" href="#">B</a>
-            <a class="nav-link" href="#">C</a>
-            <a class="nav-link" href="#">D</a>
-            <a class="nav-link" href="#">E</a>
-            <a class="nav-link" href="#">F</a>
-            <a class="nav-link" href="#">G</a>
-            <a class="nav-link" href="#">H</a>
-            <a class="nav-link" href="#">I</a>
-            <a class="nav-link" href="#">J</a>
-            <a class="nav-link" href="#">K</a>
-            <a class="nav-link" href="#">L</a>
-        </nav>
-
-
-        <h3 class="cata-head">Camper Catalog</h3>
-        <hr>
-        <p class="cata-sub text-muted">All your saved campers in one place.</p>
-
-        <form action="">
-            <input type="search" id="query" placeholder="Enter first name or username">
-            <button type=""><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-        <h3 class="suggestions text-muted">Quick Suggestions</h3>
-        <div class="row">
-
-            <div class="col">
-
+    <nav class="navbar navbar-expand-lg navbar1 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
+                <p class="text-muted brand-sub"></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex me-auto ms-auto" role="search" style="padding-top: 0 !important;">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"
+                        style="font-family: 'Livvic', cursive;">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="hstack gap-3">
+                    <div>
+                        <a href="" style="text-decoration: none;" class="set">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col">
+        </div>
+    </nav>
 
+    <div class="row">
+        <div class="col-2">
+            <div class="navigation-side" style="float: left;">
+                <nav class="nav flex-column mt-4">
+                    <p class="ms-2" style="color: white !important;">26/04/2023 | <span>10:44 am</span></p>
+                    <hr>
+                    <a href="" class="nav-link active mb-2" aria-current="page"><i class="fa-solid fa-table-columns"></i>
+                        Dashboard</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-calendar-check"></i> Schedule</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-address-card"></i> Camper Catalog</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-campground"></i> Recents</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-inbox"></i> Inbox</a>
+                    <hr>
+                    <p style="color: white !important; font-size: 0.8rem; ">©2023 campFiRe inc. 1.00</p>
+                </nav>
             </div>
-            <div class="col">
+        </div>
+        <div class="col-8 bg-body-tertiary rounded">
+            <div class="catalog bg-body-tertiary rounded mb-2 mt-4">
+                
+                <p class="page">Catalog</p>
+                <h3 class="cata-head mt-2">Camper Catalog</h3>
+                <p class="cata-sub text-muted">All your saved campers in one place.</p>
+                <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4">
 
+                <form class="d-flex col-6 mb-4 mt-2" role="search" style="padding-top: 0 !important;">
+                    <input class="form-control me-2 " type="search" placeholder="Enter first name or username" aria-label="Search"
+                        style="font-family: 'Livvic', cursive;">
+                    <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            
+                <p class="suggestions mb-4">Quick Suggestions</p>
+            
+                <div class="hstack gap-5 mb-4 justify-content-center">
+            
+                    <div class="col suggestion-pill bg-body rounded shadow-sm">
+                        <div class="hstack gap-3">
+                           <div class="ms-4">
+                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                           </div> 
+                           <div class="">
+                                <p>Keith Lee</p>
+                                <p>@realkeithlee</p>
+                           </div>
+                           <div><p>|</p></div>
+                           <div class="">
+                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col suggestion-pill bg-body rounded shadow-sm">
+                        <div class="hstack gap-3">
+                            <div class="ms-4">
+                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                            </div>
+                            <div class="">
+                                <p>Keith Lee</p>
+                                <p>@realkeithlee</p>
+                            </div>
+                            <div>
+                                <p>|</p>
+                            </div>
+                            <div class="">
+                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col suggestion-pill bg-body rounded shadow-sm">
+                        <div class="hstack gap-3">
+                            <div class="ms-4">
+                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                            </div>
+                            <div class="">
+                                <p>Keith Lee</p>
+                                <p>@realkeithlee</p>
+                            </div>
+                            <div>
+                                <p>|</p>
+                            </div>
+                            <div class="">
+                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="A mb-3">
+                    <h2 id="a-section">A</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="B mb-3">
+                    <h2 id="b-selection">B</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="C mb-3">
+                    <h2 id="c-section">C</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="hstack gap-3">
+                                <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">    Adachukwu, Mary</a>
+                                <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
             </div>
-
         </div>
-
-        <div class="A">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="B">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="C">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <p>
-                        <img src="" alt="" class="profile-pic"> Adachukwu, Mary
-                        <a href="">New Camp <i class="fa-solid fa-circle-plus"></i></a>
-                        <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
-                    </p>
-                </li>
-            </ul>
+        <div class="col-1 mt-auto mb-auto bg-body-tertiary rounded" style="padding-right: 10px !important; width: 80px !important;">
+            <nav class="nav letter-nav">
+                <a class="nav-link active" aria-current="page" href="#">A</a>
+                <a class="nav-link" href="#">B</a>
+                <a class="nav-link" href="#">C</a>
+                <a class="nav-link" href="#">D</a>
+                <a class="nav-link" href="#">E</a>
+                <a class="nav-link" href="#">F</a>
+                <a class="nav-link" href="#">G</a>
+                <a class="nav-link" href="#">H</a>
+                <a class="nav-link" href="#">I</a>
+                <a class="nav-link" href="#">J</a>
+                <a class="nav-link" href="#">K</a>
+                <a class="nav-link" href="#">L</a>
+                <a class="nav-link" href="#">M</a>
+                <a class="nav-link" href="#">N</a>
+                <a class="nav-link" href="#">O</a>
+                <a class="nav-link" href="#">P</a>
+                <a class="nav-link" href="#">R</a>
+                <a class="nav-link" href="#">S</a>
+                <a class="nav-link" href="#">T</a>
+                <a class="nav-link" href="#">U</a>
+                <a class="nav-link" href="#">V</a>
+                <a class="nav-link" href="#">W</a>
+                <a class="nav-link" href="#">X</a>
+                <a class="nav-link" href="#">Y</a>
+                <a class="nav-link" href="#">Z</a>
+            </nav>
         </div>
     </div>
 
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
 </body>
 
 </html>

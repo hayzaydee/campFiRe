@@ -45,7 +45,6 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 
 .btn{
     font-size: 0.95rem !important;
-
     font-family: 'Raleway', sans-serif !important;
     font-weight: 300 !important;
     text-align: center !important;
@@ -70,7 +69,6 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 }
 
 .navbar{
-    background-color: #ffffff;
 }
 
 .navbar a{
@@ -99,7 +97,7 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
 }
 
 ul{
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
 }
 
 .base{
@@ -406,7 +404,8 @@ ul{
 
 .copyright{
     color: #ffffff !important;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-top: 1rem;
 }
 
 .footerlogo{
@@ -512,6 +511,583 @@ form, .s-up-basicdesc{
 }
 
 
+/* BUSINESS1.HTML */
+
+.business1{
+    text-align: center;
+}
+
+.business-head{
+    font-family: 'Carter One', cursive;
+    font-size: 2.5rem;
+}
+
+.busi-foot1{
+    padding-bottom: 2.6rem;
+}
+
+/* BUSINESS2.HTML */
+
+
+.bus2-form{
+    color: #481380;
+}
+
+.business-sub{
+    font-size: 1.8rem;
+    padding-bottom: 0;
+}
+
+
+.back-text{
+    color: white !important;
+    font-size: 0.97rem !important;
+    font-family: 'Raleway', cursive;
+}
+
+/* BUSINESS3.HTML */
+
+.busi-form3{
+    color: #481380;
+}
+
+.business3{
+    text-align: center
+}
+
+/* CAMPFIRE-DETAILS.HTML */
+
+.navbar1{
+    padding: 0.1rem;
+}
+
+.navbar1 a{
+    color: #ffffff !important;
+}
+
+.details-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.off-head{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Unbounded', cursive;
+    margin-bottom: 0;
+    color: #ffffff !important;
+}
+
+.off-sub, .plan{
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #ffffff !important;
+    font-family: 'Raleway', cursive;
+}
+
+.menu{
+    background-color: #ECF2FF;
+    color: #481380;
+}
+
+.set{
+    font-size: 1.5rem;
+}
+
+.details{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.activity-title{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.activity-sub{
+   padding-left: 35rem;
+   font-weight: 600;
+}
+
+
+.navigation-side a{
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1rem !important;
+}
+
+.fa-circle{
+    font-size: 1rem;
+}
+
+.details h4{
+    font-family: 'Raleway', cursive;
+    font-size: 1.2rem;
+    color: #4a36b2;
+    text-decoration: underline;
+}
+
+.detail{
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+
+/* CATALOG.HTML */
+
+.catalog{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.catalog-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.page{
+    font-size: 1.2rem !important;
+    text-decoration: underline !important;
+    color: #481380 !important;
+    text-align: left !important;
+}
+
+.letter-nav{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+    background-color: #ffffff;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.cata-head{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.cata-sub{
+    text-align: center;
+}
+
+.suggestions{
+    font-size: 1.1rem;
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+}
+
+.suggestion-pill{
+    height: 3.5rem !important;
+    border-color: #481380 !important;
+    border-radius: 1rem !important;
+}   
+
+.suggestion-pill p{
+    font-size: 0.9rem !important;
+    margin-bottom: 0;
+    color: #481380 !important;
+    padding-top: 2px;
+    font-family: 'Raleway', cursive;
+}
+
+.new-btn{
+    font-size: 1.5rem;
+    color: #481380;
+}
+
+.A a{
+    font-family: 'Livvic', cursive;
+    font-size: 1rem;
+    text-decoration: none !important;
+    color: #481380 !important;
+}
+
+.B a{
+    font-family: 'Livvic', cursive;
+    font-size: 1rem;
+    text-decoration: none !important;
+    color: #481380 !important;
+}
+
+.C a{
+    font-family: 'Livvic', cursive;
+    font-size: 1rem;
+    text-decoration: none !important;
+    color: #481380 !important;
+}
+
+.camper-namee{
+    font-size: 1.2rem !important;
+}
+
+/* PROFILE.HTML */
+
+.profile{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.profile-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.user{
+    font-size: 3.3rem !important;
+}
+
+.user-socials{
+    font-size: 2rem;
+}
+
+.username, .contact-info{
+    font-family: 'Raleway', cursive;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem !important;
+    color: #645CBB !important;
+}
+
+.indicator{
+    font-size: 0.8rem !important;
+}
+
+.indicator-head, .est{
+    font-family: 'Raleway', cursive;
+    text-align: center; 
+    font-size: 1.3rem !important; 
+    font-weight: 100;
+}
+
+.schedule-head{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.day{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 600;
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+}
+
+.schedule-controls{
+    text-align: right;
+}
+
+.expand-row{
+    padding-top: 2rem;
+    padding-bottom: 3rem ;
+}
+
+.common p{
+    text-align: center;
+}
+
+.common-head{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+.camp-nos, .probability, .availability{
+    font-family: 'Livvic', cursive !important;
+    font-size: 1.2rem;
+}
+
+.camp-nos{
+    color: #F49D1A !important;
+}
+
+
+.probability{
+    color: #DC0F4C !important;
+}
+
+.availability{
+    color: #39B5E0 !important;
+}
+
+
+/* NEWCAMP.HTML */
+
+.new-camp{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll; 
+}
+
+.newcamp-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.new-caption{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.new-form{
+    color: #481380 !important;
+}
+
+.addcamper{
+    text-align: center;
+}
+
+/* NEWCAMP.HTML */
+
+.recent-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.recent{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    text-align: left;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}   
+
+.recent-head{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.recent-sub{
+    text-align: center;
+}
+
+.filter-stack{
+    padding: 0;
+}
+
+.recent-form{
+    color: #481380;
+}
+
+.recent-card{
+    text-align: center;
+    font-family: 'Raleway', cursive;
+}
+
+.actions{
+    font-size: 1.2rem !important;
+}
+
+.today-head{
+    text-align: left;
+    text-decoration: underline;
+}
+
+.d-head, .t-head, .p-head{
+    font-family: 'Raleway', cursive !important;
+    font-size: 1rem !important;
+    text-decoration: underline;
+}
+
+.recent-d{
+    color: #3C79F5 !important;
+    font-size: 2rem;
+}
+
+.recent-t{
+    color: #F49D1A !important;
+    font-size: 2rem;
+}
+
+.place{
+    color: #39B5E0 !important;
+    font-size: 1.3rem;
+}
+
+.actions{
+    color: #645CBB !important;
+    font-family: 'Raleway', cursive !important;
+    font-size: 1rem !important;
+}
+
+/* DASHBOARD.HTML */
+
+.dash-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.dashboard{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.welcome-tag{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: left !important;
+}
+
+.welcome-sub{
+    text-align: left !important;
+}
+
+.today-card{
+    text-align: center;
+}
+
+.request-time{
+    color: #F49D1A !important;
+    font-size: 2rem;
+}
+
+.request-duration{
+    color: #3C79F5 !important;
+    font-size: 2rem;
+}
+
+.request-id{
+    text-align: left !important;
+    font-family: 'Raleway', cursive;
+    font-size: 1.1rem;
+}
+
+.request-title{
+    font-family: 'Livvic', cursive;
+    text-decoration: underline;
+}
+
+.p-details{
+    font-family: 'Raleway', cursive;
+    font-size: 1.1rem;
+}
+
+/* REQUESTDETAILS.HTML */
+
+.request-body{
+    background-color: #645CBB;
+    color: #ffffff;
+}
+
+.request{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.user-requested{
+    font-size: 2.2rem !important;
+    padding-right: 2rem;
+}
+
+.req-tag{
+    font-size: 1.8rem;
+}
+
+.camper-add{
+    font-size: 1.2rem;
+}
+
+.camper-list{
+    font-family: 'Raleway', cursive;
+    font-size: 1.2rem;
+}
+
+.number-span{
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: 'Josefin Slab', cursive;
+}
+
+.warn{
+   font-family: 'Raleway', cursive;
+   font-size: 1.1rem;
+}
+
+.bri{
+   font-family: 'Raleway', cursive; 
+   text-align: center;
+   text-decoration: underline;
+   font-size: 1rem;
+
+}
+.request-brief{
+    text-align: center;
+}
+
+.req-date{
+    margin-bottom: 0;
+    font-size: 2.8rem !important;
+}
+
+.req-time{
+    font-size: 2.8rem !important;
+    color: #F49D1A !important;
+}
+
+.req-duration{
+    font-size: 2.8rem !important;
+    color: #39B5E0 !important;
+}
+
+.place-head{
+    font-family: 'Raleway', cursive;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+
 
 
 
@@ -552,3 +1128,5 @@ form, .s-up-basicdesc{
         margin: 0 !important;
     }
 }
+
+

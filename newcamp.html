@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>campFiRe</title>
+    <title>New campFiRe</title>
 
     <!-- Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
@@ -45,118 +45,213 @@
     </style>
 </head>
 
-<body>
+<body class="newcamp-body">
     
-    <div class="new-camp contain">
-
-        <h3 class="new-head">New Camp</h3>
-        <hr>
-
-        <p class="new-caption">let's get marshmallows right after we set things up!</p>
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8">
-
-                <form action="">
-
-                    <div class="col-9">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInputGrid" >
-                            <label for="floatingInputGrid">Title</label>
-                            <div class="form-text" style="text-align: left; padding-left: 7px;">
-                                <a href="" style="text-decoration: none ;" class="text-muted">Suggestions</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-2 mb-4">
-                    
-                        <div class="col-md">
-                            <div class="form-floating">
-                                <input type="time" class="form-control">
-                                <label for="floatingSelectGrid">Time</label>
-                            </div>
-                        </div>
-                    
-                        <div class="col-md">
-                            <div class="form-floating">
-                                <input type="date" class="form-control">
-                                <label for="floatingSelectGrid">City</label>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-7">
-                        
-                        <div class="form-floating">
-                            <input type="time" class="form-control">
-                            <label for="floatingSelectGrid">Estimated Duration</label>
-                        </div>
-
-                    </div>
-
-                    <div class="col-9">
-                        <div class="form-floating mb-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Notes</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="Type something here..."
-                                    placeholder="Type something here...">
-                                </textarea>
-                                <div class="form-text" style="text-align: left; padding-left: 7px;">
-                                    <a href="" style="text-decoration: none ;" class="text-muted">Clear</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3 class="addcamper">Add Campers</h3>
-                    <hr>
-
-                    <p class="text-muted suggestions">Quick Add</p>
-
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-
-
+    <nav class="navbar navbar-expand-lg navbar1 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
+                <p class="text-muted brand-sub"></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex me-auto ms-auto" role="search" style="padding-top: 0 !important;">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"
+                        style="font-family: 'Livvic', cursive;">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-
+                <div class="hstack gap-3">
+                    <div>
+                        <a href="" style="text-decoration: none;" class="set">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </nav>
 
+    <div class="row">
+
+        <div class="col-2">
+            <div class="navigation-side" style="float: left;">
+                <nav class="nav flex-column mt-4">
+                    <p class="ms-2" style="color: white !important;">26/04/2023 | <span>10:44 am</span></p>
+                    <hr>
+                    <a href="" class="nav-link active mb-2" aria-current="page"><i class="fa-solid fa-table-columns"></i>
+                        Dashboard</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-calendar-check"></i> Schedule</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-address-card"></i> Camper Catalog</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-campground"></i> Recents</a>
+                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-inbox"></i> Inbox</a>
+                    <hr>
+                    <p style="color: white !important; font-size: 0.8rem; ">©2023 campFiRe inc. 1.00</p>
+                </nav>
+            </div>
         </div>
 
-    </div>
+        <div class="col-9">
+            <div class="new-camp contain bg-body-tertiary rounded mt-4 mb-3">
+        
+            <p class="new-head page">New Camp</p>
+            <hr>
+        
+            <h3 class="new-caption">let's get marshmallows right after we set things up!</h3>
+        
+            <div class="row justify-content-center">
+        
+                <div class="col-lg-8">
+        
+                    <form action="" class="new-form">
+        
+                        <div class="col-9 ms-auto me-auto">
+                            <div class="mb-3">
+                                <label for="floatingInputGrid" class="">Title</label>
+                                <input class="form-control mt-2" id="floatingInputGrid"> 
+                                <div class="form-text" style="text-align: left; padding-left: 7px;">
+                                    <a href="" style="text-decoration: none ;" class="">Suggestions</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row g-2 mb-4">
+        
+                            <div class="col-md">
+                                <div class="">
+                                    <label for="floatingSelectGrid">Time</label>
+                                    <input type="time" class="form-control">                                   
+                                </div>
+                            </div>
+        
+                            <div class="col-md">
+                                <div class="">
+                                    <label for="floatingSelectGrid">Date</label>
+                                    <input type="date" class="form-control">                                   
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-7 mb-3 ms-auto me-auto">
+        
+                            <div class="">
+                                <label for="floatingSelectGrid">Estimated Duration</label>
+                                <input type="time" class="form-control">                                
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-9">
+                            <div class="form-floating mb-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Notes</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        value="Type something here..." placeholder="Type something here...">
+                                        </textarea>
+                                    <div class="form-text" style="text-align: left; padding-left: 7px;">
+                                        <a href="" style="text-decoration: none ;" class="">Clear</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
 
+                        <h3 class="addcamper mt-3 mb-3">Add Campers</h3>
+        
+                        <p class="text-muted suggestions">Quick Add</p>
+
+                        <div class="hstack gap-5 mb-4 justify-content-center">
+                        
+                            <div class="col suggestion-pill bg-body rounded shadow-sm">
+                                <div class="hstack gap-3">
+                                    <div class="ms-4">
+                                        <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                    </div>
+                                    <div class="">
+                                        <p>Keith Lee</p>
+                                        <p>@realkeithlee</p>
+                                    </div>
+                                    <div>
+                                        <p>|</p>
+                                    </div>
+                                    <div class="">
+                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col suggestion-pill bg-body rounded shadow-sm">
+                                <div class="hstack gap-3">
+                                    <div class="ms-4">
+                                        <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                    </div>
+                                    <div class="">
+                                        <p>Keith Lee</p>
+                                        <p>@realkeithlee</p>
+                                    </div>
+                                    <div>
+                                        <p>|</p>
+                                    </div>
+                                    <div class="">
+                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col suggestion-pill bg-body rounded shadow-sm">
+                                <div class="hstack gap-3">
+                                    <div class="ms-4">
+                                        <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                    </div>
+                                    <div class="">
+                                        <p>Keith Lee</p>
+                                        <p>@realkeithlee</p>
+                                    </div>
+                                    <div>
+                                        <p>|</p>
+                                    </div>
+                                    <div class="">
+                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+        
+                    </form>
+        
+                </div>
+        
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+    
 </body>
 
 </html>
