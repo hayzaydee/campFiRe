@@ -45,25 +45,32 @@
     </style>
 </head>
 
-<body class="newcamp-body">
+<body class="">
     
-    <nav class="navbar navbar-expand-lg navbar1 shadow">
+    <nav class="navbar navbar-expand-lg p-4 nav-shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
-                <p class="text-muted brand-sub"></p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex me-auto ms-auto" role="search" style="padding-top: 0 !important;">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"
-                        style="font-family: 'Livvic', cursive;">
-                    <button class="btn btn-outline-light" type="submit"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link me-3" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="history.html">campFiRe History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Interactive Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Help</a>
+                    </li>
+                </ul>
                 <div class="hstack gap-3">
                     <div>
                         <a href="" style="text-decoration: none;" class="set">
@@ -80,30 +87,13 @@
         </div>
     </nav>
 
-    <div class="row">
-
-        <div class="col-2">
-            <div class="navigation-side" style="float: left;">
-                <nav class="nav flex-column mt-4">
-                    <p class="ms-2" style="color: white !important;">26/04/2023 | <span>10:44 am</span></p>
-                    <hr>
-                    <a href="" class="nav-link active mb-2" aria-current="page"><i class="fa-solid fa-table-columns"></i>
-                        Dashboard</a>
-                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-calendar-check"></i> Schedule</a>
-                    <a href="" class="nav-link mb-2"><i class="fa-regular fa-address-card"></i> Camper Catalog</a>
-                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-campground"></i> Recents</a>
-                    <a href="" class="nav-link mb-2"><i class="fa-solid fa-inbox"></i> Inbox</a>
-                    <hr>
-                    <p style="color: white !important; font-size: 0.8rem; ">©2023 campFiRe inc. 1.00</p>
-                </nav>
-            </div>
-        </div>
+    <div class="row justify-content-center">
 
         <div class="col-9">
-            <div class="new-camp contain bg-body-tertiary rounded mt-4 mb-3">
+
+            <div class="new-camp contain bg-body-tertiary rounded shadow mt-5 mb-3">
         
             <p class="new-head page">New Camp</p>
-            <hr>
         
             <h3 class="new-caption">let's get marshmallows right after we set things up!</h3>
         
@@ -185,7 +175,7 @@
                                         <p>|</p>
                                     </div>
                                     <div class="">
-                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                        <a href="" class="new-btn me-2"><i class="fa-regular fa-square-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +192,7 @@
                                         <p>|</p>
                                     </div>
                                     <div class="">
-                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                        <a href="" class="new-btn me-2"><i class="fa-regular fa-square-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +209,7 @@
                                         <p>|</p>
                                     </div>
                                     <div class="">
-                                        <a href="" class="new-btn"><i class="fa-regular fa-square-plus"></i></a>
+                                        <a href="" class="new-btn me-2"><i class="fa-regular fa-square-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -251,6 +241,9 @@
         const collapseElementList = document.querySelectorAll('.collapse')
         const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
     
 </body>
 

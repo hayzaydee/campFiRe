@@ -87,7 +87,7 @@
                         </div>
                         <div class="col-9">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="555-678-910">
+                                <input type="tel" class="form-control" id="floatingInputGrid" placeholder="555-678-910">
                                 <label for="floatingInputGrid">Phone</label>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                     <div class="row">
                         <div class="col-10 mb-4">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                                <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
                                 <label for="floatingInputGrid">Address</label>
                             </div>
                         </div>
@@ -166,7 +166,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary signup-btn">Next <i class="fa fa-arrow-right"></i></button>
+                    <a role="button" type="submit" class="btn btn-primary signup-btn" href="home.html">Next <i class="fa fa-arrow-right"></i></a>
 
                 </form>
                     
@@ -254,6 +254,9 @@
             const collapseElementList = document.querySelectorAll('.collapse')
             const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 

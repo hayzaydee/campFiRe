@@ -29,9 +29,9 @@ h3{
 }
 
 btn-primary, .btn-primary:active, .btn-primary:visited {
-  background-color: #481380 !important;
-  border-color: #481380 !important;
-  color: #ffffff !important;
+    background-color: #481380 !important;
+    border-color: #481380 !important;
+    color: #ffffff !important;
 }
 
 .btn-primary:hover{
@@ -68,16 +68,21 @@ btn-primary, .btn-primary:active, .btn-primary:visited {
     color: #481380;
 }
 
-.navbar{
+.nav-shadow{
+     box-shadow: 0 20px 20px -20px rgb(0 0 0/15%);
 }
 
 .navbar a{
     color: #481380;
 }
 
+.navbar a:hover{
+    color: #3C79F5 ;
+}
+
 .nav-link{
-    font-family: 'Josefin Slab', serif !important;
-    font-size: 1.3rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1.1rem !important;
     text-decoration: none !important;
 }
 
@@ -177,10 +182,8 @@ ul{
 }
 
 .learnlink{
-    text-align: right !important;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
-    margin-left: 27rem !important;
 }
 
 .learnlink:hover{
@@ -204,6 +207,12 @@ ul{
 .droptext:hover{
     color:#3C79F5!important;
     border-color: #3C79F5!important;
+}
+
+.drop-item{
+    font-family: 'Raleway', cursive;
+    text-decoration: none;
+    margin-left: 1rem;
 }
 
 .featimg-2{
@@ -292,7 +301,7 @@ ul{
 }
 
 .fa-circle-check {
-    color: #10A19D;
+
 }
 
 .priceborder{
@@ -613,7 +622,6 @@ form, .s-up-basicdesc{
 
 .activity-sub{
    padding-left: 35rem;
-   font-weight: 600;
 }
 
 
@@ -711,21 +719,21 @@ form, .s-up-basicdesc{
     color: #481380;
 }
 
-.A a{
+#A a{
     font-family: 'Livvic', cursive;
     font-size: 1rem;
     text-decoration: none !important;
     color: #481380 !important;
 }
 
-.B a{
+#B a{
     font-family: 'Livvic', cursive;
     font-size: 1rem;
     text-decoration: none !important;
     color: #481380 !important;
 }
 
-.C a{
+#C a{
     font-family: 'Livvic', cursive;
     font-size: 1rem;
     text-decoration: none !important;
@@ -745,13 +753,8 @@ form, .s-up-basicdesc{
     padding-bottom: 0;
     text-align: left;
     background-color: #ffffff;
-    height: 600px;
+    height: 500px;
     overflow-y: scroll;
-}
-
-.profile-body{
-    background-color: #645CBB;
-    color: #ffffff;
 }
 
 .user{
@@ -783,6 +786,7 @@ form, .s-up-basicdesc{
 .schedule-head{
     font-size: 1.8rem;
     text-align: center;
+    text-decoration: underline;
 }
 
 .day{
@@ -914,9 +918,10 @@ form, .s-up-basicdesc{
     font-size: 1.2rem !important;
 }
 
-.today-head{
+.today-head, .inbox-head{
     text-align: left;
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .d-head, .t-head, .p-head{
@@ -967,16 +972,8 @@ form, .s-up-basicdesc{
     text-align: center;
 }
 
-.welcome-tag{
-    font-family: 'Unbounded', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-align: left !important;
-}
-
-.welcome-sub{
-    text-align: left !important;
+.pending-date{
+    font-family: 'Raleway', cursive !important;
 }
 
 .today-card{
@@ -1009,6 +1006,9 @@ form, .s-up-basicdesc{
     font-size: 1.1rem;
 }
 
+.p-details:hover{
+    color: #481380 !important;
+}
 /* REQUESTDETAILS.HTML */
 
 .request-body{
@@ -1029,6 +1029,8 @@ form, .s-up-basicdesc{
 .user-requested{
     font-size: 2.2rem !important;
     padding-right: 2rem;
+    font-family: 'Unbounded', cursive !important;
+    color: #481380 !important;
 }
 
 .req-tag{
@@ -1088,6 +1090,122 @@ form, .s-up-basicdesc{
 }
 
 
+.welcome-card{
+    border-radius: 3.2rem;
+    text-align: center !important;
+    box-shadow: 0 .15rem .5rem rgba(0,0,0,.095)!important;
+}
+
+.welcome-tag{
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center !important;
+}
+
+.welcome-sub{
+    font-family: 'Josefin Slab', cursive;
+    font-size: 1.3rem;
+    color: #481380 !important;
+}
+
+.d-t{
+    font-size: 1.1rem !important;
+    color: #3C79F5 !important;
+    font-family: 'Raleway', cursive !important;
+    text-align: right !important;
+}
+
+.dash-nav1{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.dash-nav2{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.dash-nav3{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.dash-nav4{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.dash-nav5{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.foot-brief{
+    font-family: 'Josefin Slab', sans-serif;
+    font-size: 1rem;
+    color: #4a36b2;
+    text-align: center;
+}
+
+.inbox-head{
+    text-align: center !important;
+}
+
+.pending-duration{
+    font-family: 'Raleway', cursive !important;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.pending-date{
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.dur-head{
+    font-size: 1.2rem;
+    font-family: 'Raleway', cursive;
+}
+
+.pending-head{
+    font-size: 2rem;
+}
+
+.recent-date{
+    font-family: 'Raleway', cursive;
+}
+
+.brief-desc, .add-camper{
+    font-family: 'Montserrat', cursive;
+    font-size: 1.1rem;
+    text-align: justify;
+}
 
 
 

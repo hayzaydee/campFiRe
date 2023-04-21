@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>campFiRe: History</title>
+
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Flaticon Icons-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Slab&family=Livvic:wght@300&family=Lobster&family=Montserrat&family=Noto+Color+Emoji&family=Raleway&family=Unbounded:wght@300&display=swap');
+    </style>
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="index.js"></script>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg p-4 nav-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link me-3" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="history.html">campFiRe History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Interactive Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Help</a>
+                    </li>
+                </ul>
+                <div class="hstack gap-3">
+                    <div>
+                        <a href="" style="text-decoration: none;" class="set">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="history base">
+
+        <div class="row justify-content-center">
+
+            <div class="col-11">
+                
+                <h3 class="history-head" style="font-weight: bold;">campFiRe History</h3>
+                <p class="history-sub text-muted">References to past engagements, through the Camper Catalog and Recents tabs.</p>
+
+                <nav>
+                    <div class="nav nav-tabs justify-content-center mt-5" id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs justify-content-center mt-5" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-recent-tab" data-bs-toggle="tab" data-bs-target="#nav-recent" type="button"
+                                role="tab" aria-controls="nav-recent" aria-selected="true">Recents</button>
+                            <button class="nav-link" id="nav-catalog-tab" data-bs-toggle="tab" data-bs-target="#nav-catalog" type="button"
+                                role="tab" aria-controls="nav-catalog" aria-selected="false">Camper Catalog</button>
+                        </div>
+                    </div>
+                </nav>
+            
+                <div class="tab-content justify-content-center mt-5" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active bg-body-tertiary rounded shadow dash-nav4" id="nav-recent" role="tabpanel"
+                        aria-labelledby="nav-recent-tab" tabindex="0">
+            
+                        <div class="row justify-content-center">
+            
+                            <h3 class="recent-head">Recents</h3>
+                            <p class="recent-sub">An array of campFiRes you've participated in.</p>
+                            <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+            
+                            <div class="col-8">
+                                <div class="row justify-content-center">
+                                
+                                    <div class="col-8 mb-5">
+                                
+                                        <form action="" class="recent-form">
+                                
+                                            <div class="hstack gap-5">
+                                
+                                                <div class="form-floating col-3">
+                                                    <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                        <option selected>All Day</option>
+                                                        <option value="1">Morning</option>
+                                                        <option value="2">Afternoon</option>
+                                                        <option value="3">Evening</option>
+                                                        <option value="3">Custom</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Period of Day</label>
+                                                </div>
+                                
+                                                <div class="form-floating col-4">
+                                                    <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                        <option selected>January: Week 1</option>
+                                                        <option value="1">Today</option>
+                                                        <option value="2">January: Week 2</option>
+                                                        <option value="3">January: Week 3</option>
+                                                        <option value="4">January: Week 4</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Timeline</label>
+                                                </div>
+                                
+                                                <div class="form-floating col-3">
+                                                    <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                        <option selected>Last 50</option>
+                                                        <option value="1">Last 100</option>
+                                                        <option value="2">Last 200</option>
+                                                        <option value="3">All Time</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Number</label>
+                                                </div>
+                                
+                                            </div>
+                                
+                                        </form>
+                                
+                                    </div>
+                                
+                                    <div class="col-12 recent-card">
+                                
+                                        <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                                
+                                        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                
+                                            <div class="carousel-inner">
+                                
+                                                <div class="carousel-item active">
+                                
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-12 recent-card">
+                                
+                                        <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                                
+                                        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                
+                                            <div class="carousel-inner">
+                                
+                                                <div class="carousel-item active">
+                                
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-12 recent-card">
+                                
+                                        <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                                
+                                        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                
+                                            <div class="carousel-inner">
+                                
+                                                <div class="carousel-item active">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="carousel-item">
+                                                    <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                        <h3 class="campfire-head">Game Night</p>
+                                                            <p class="text-muted">CampFiRe made by <strong>you</strong></p>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <p class="t-head">Time</p>
+                                                                    <p class="recent-t">21:00</p>
+                                                                </div>
+                                                                <div class="col ms-auto">
+                                                                    <p class="d-head">Duration</p>
+                                                                    <p class="recent-d">2hr 30min</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="p-head">Location Details</p>
+                                                                    <p class="text-muted place-sub">This bonfire was made at:</p>
+                                                                    <h4 class="place">Lorem ipsum dolor sit amet eud</h4>
+                                                                    <p class="city-country">City, State | Country</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <a href="" class="actions">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                                    <a href="" class="actions">Redo <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-catalog" role="tabpanel" aria-labelledby="nav-catalog-tab" tabindex="0">
+                              
+                        <div class="row justify-content-center">
+
+                            <div class="col-10 bg-body-tertiary rounded shadow dash-nav5 p-3">
+                                <h3 class="cata-head mt-2">Camper Catalog</h3>
+                                <p class="cata-sub text-muted">All your saved campers in one place.</p>
+                                <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4">
+                            
+                                <form class="d-flex col-6 mb-4 mt-2" role="search" style="padding-top: 0 !important;">
+                                    <input class="form-control me-2 " type="search" placeholder="Enter first name or username" aria-label="Search"
+                                        style="font-family: 'Livvic', cursive;">
+                                    <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            
+                                <p class="suggestions mb-4">Quick Suggestions</p>
+                            
+                                <div class="row gap-4 mb-4 justify-content-center">
+                            
+                                    <div class="col-3 suggestion-pill bg-body rounded shadow-sm">
+                                        <div class="hstack gap-3">
+                                            <div class="ms-4">
+                                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                            </div>
+                                            <div class="">
+                                                <p>Keith Lee</p>
+                                                <p>@realkeithlee</p>
+                                            </div>
+                                            <div>
+                                                <p>|</p>
+                                            </div>
+                                            <div class="">
+                                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 suggestion-pill bg-body rounded shadow-sm">
+                                        <div class="hstack gap-3">
+                                            <div class="ms-4">
+                                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                            </div>
+                                            <div class="">
+                                                <p>Keith Lee</p>
+                                                <p>@realkeithlee</p>
+                                            </div>
+                                            <div>
+                                                <p>|</p>
+                                            </div>
+                                            <div class="">
+                                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 suggestion-pill bg-body rounded shadow-sm">
+                                        <div class="hstack gap-3">
+                                            <div class="ms-4">
+                                                <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                                            </div>
+                                            <div class="">
+                                                <p>Keith Lee</p>
+                                                <p>@realkeithlee</p>
+                                            </div>
+                                            <div>
+                                                <p>|</p>
+                                            </div>
+                                            <div class="">
+                                                <a href="" class="new-btn"><i class="fa-solid fa-circle-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            
+                                <div data-bs-spy="scroll" data-bs-target="#catalog-nav" data-bs-smooth-scroll="true" tabindex="0">
+                                    
+                                    <div class="mb-3" id="A">
+                                        <h2 id="a-section">A</h2>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mb-3" id="B">
+                                        <h2 id="b-selection">B</h2>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mb-3" id="C">
+                                        <h2 id="c-section">C</h2>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="hstack gap-3">
+                                                    <a href="profile.html" class="camper-namee"><img src="media/user.png" class="" alt=""
+                                                            style="width: 32px; height: 32px; font-weight: bold;"> Adachukwu, Mary</a>
+                                                    <a href="" class="ms-auto"><i class="fa-solid fa-circle-plus"></i> New Camp </a>
+                                                    <a href="">Remove <i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-1 mt-auto mb-auto bg-body-tertiary rounded"
+                                style="padding-right: 10px !important; width: 80px !important;">
+                                <nav class="nav letter-nav">
+                                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#A">A</a>
+                                    <li class="nav-item"><a class="nav-link" href="#B">B</a>
+                                    <li class="nav-item"><a class="nav-link" href="#C">C</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">D</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">E</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">F</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">G</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">H</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">I</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">J</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">K</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">L</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">M</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">N</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">O</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">P</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">R</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">S</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">T</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">U</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">V</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">W</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">X</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Y</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Z</a></li>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-5">
+                    
+                    <h4 class="foot-brief">campFiRe version 1.00 . All rights reserved. © 2023 campFiRe inc.</h4>
+                             
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>

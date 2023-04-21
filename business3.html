@@ -78,11 +78,7 @@
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                         <label for="floatingPassword">Confirm Password</label>
                     </div>
-                
-                    <div class="mb-3">
-                        <a role="button" type="submit" class="btn btn-primary btn-lg" href="dashboard.html">Continue <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                
+
                     <div>
                         <div class="form-check mb-4">
                             <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
@@ -91,6 +87,12 @@
                             <div class="invalid-feedback">You must agree to all terms and conditions.</div>
                         </div>
                     </div>
+
+                    <div class="mb-3">
+                        <a role="button" type="submit" class="btn btn-primary btn-lg" href="home.html">Continue <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                
+                    
                 </form>
 
             </div>
@@ -131,6 +133,9 @@
         const collapseElementList = document.querySelectorAll('.collapse')
         const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
     
 </body>
 

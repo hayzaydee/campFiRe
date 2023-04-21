@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>campFiRe: Home</title>
+
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/e619007346.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Flaticon Icons-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Slab&family=Livvic:wght@300&family=Lobster&family=Montserrat&family=Noto+Color+Emoji&family=Raleway&family=Unbounded:wght@300&display=swap');
+    </style>
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="index.js"></script>
+
+    <style>
+
+
+    </style>
+</head>
+
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg nav-shadow p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo.png" style="height: 36px; width: 30px;" class="mb-2" alt=""> campFiRe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link me-3" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="history.html">campFiRe History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Interactive Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="#">Help</a>
+                    </li>
+                </ul>
+                <div class="hstack gap-3">
+                    <div>
+                        <a href="" style="text-decoration: none;" class="set">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <img src="media/user.png" class="" alt="" style="width: 32px; height: 32px; font-weight: bold;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home base">
+
+        <div class="row justify-content-center">
+
+            <div class="col-8 mt-3 p-3">
+                <div class="bg-body-tertiary p-4 welcome-card">
+                    <p class="welcome-tag mt-3">Who are we <span style="color: #39b5e0;">campin'</span> with today?</p>
+                    <div class="row justify-content-center mt-2">
+                        <div class="col me-auto"> 
+                            <span class="welcome-sub me-5 mt-2">Welcome,  Divine</span>
+                            <div class="vr"></div>
+                            <a type="button" class="btn btn-sm btn-outline-success new ms-4" href="newcamp.html"><i class="fa-solid fa-circle-plus"></i> New
+                                campFiRe
+                            </a>
+                        </div>
+                        <h4 class="mt-3 d-t" style="">26/04/2023 | <span>10:44 am</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <nav>
+                    <div class="nav nav-tabs justify-content-center mt-5" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-campfire-tab" data-bs-toggle="tab" data-bs-target="#nav-campfire" type="button"
+                            role="tab" aria-controls="nav-campfire" aria-selected="true">campFiRes</button>
+                        <button class="nav-link" id="nav-today-tab" data-bs-toggle="tab" data-bs-target="#nav-today" type="button"
+                            role="tab" aria-controls="nav-today" aria-selected="false">Today's Requests</button>
+                        <button class="nav-link" id="nav-inbox-tab" data-bs-toggle="tab" data-bs-target="#nav-inbox" type="button"
+                            role="tab" aria-controls="nav-inbox" aria-selected="false">Inbox</button>
+                        <button class="nav-link" id="nav-schedule-tab" data-bs-toggle="tab" data-bs-target="#nav-schedule" type="button" role="tab"
+                            aria-controls="nav-schedule" aria-selected="false">Schedule</button>
+                    </div>
+                </nav>
+
+                <div class="tab-content justify-content-center mt-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active bg-body-tertiary rounded shadow dash-nav1" id="nav-campfire" role="tabpanel" aria-labelledby="nav-campfire-tab" tabindex="0">
+                        <div class="today">
+
+                            <div class="row justify-content-center">
+                        
+                                <div class="hstack">
+                                    <h3 class="today-head">Today </h3>
+                        
+                                    <div class="btn-group ms-auto">
+                                        <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Layout Options
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="" class="drop-item">Grid</a></li>
+                                            <li><a href="" class="drop-item">Column</a></li>
+                                            <li><a href="" class="drop-item">Carousel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="row justify-content-center mb-4 mt-4">
+                        
+                                <div class="col-5 card p-3 today-card">
+                                    <p class="request-id">Brenda, E <span class="text-muted">@embrenda</span></p>
+                                    <p class="request-title">Weekly Report</p>
+                        
+                                    <p class="supplementary"><span class="request-time">09:00</span> | <span class="request-duration">1hr
+                                            30min</span>
+                                    </p>
+                                    <br>
+                                    <div class="hstack gap-3 ms-auto">
+                                        <a href="camp-details.html" class="request-details btn btn-primary">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-primary btn-sm dropdown-toggle request-manage" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Manage
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="" class="drop-item">Reschedule</a></li>
+                                                <li><a href="" class="drop-item">Message</a></li>
+                                                <li><a href="" class="drop-item">Dismiss</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-5 card ms-5 p-3 today-card">
+                                    <p class="request-id">Brenda, E <span class="text-muted">@embrenda</span></p>
+                                    <p class="request-title">Weekly Report</p>
+                        
+                                    <p class="supplementary"><span class="request-time">09:00</span> | <span class="request-duration">1hr
+                                            30min</span>
+                                    </p>
+                                    <br>
+                                    <div class="hstack gap-3 ms-auto ">
+                                        <a href="camp-details.html" class="request-details btn btn-primary">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-primary btn-sm dropdown-toggle request-manage" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Manage
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="" class="drop-item">Reschedule</a></li>
+                                                <li><a href="" class="drop-item">Message</a></li>
+                                                <li><a href="" class="drop-item">Dismiss</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="row justify-content-center mb-4 mt-4">
+                        
+                                <div class="col-5 card p-3 today-card">
+                                    <p class="request-id">Brenda, E <span class="text-muted">@embrenda</span></p>
+                                    <p class="request-title">Weekly Report</p>
+                        
+                                    <p class="supplementary"><span class="request-time">09:00</span> | <span class="request-duration">1hr
+                                            30min</span>
+                                    </p>
+                                    <br>
+                                    <div class="hstack gap-3 ms-auto ">
+                                        <a href="camp-details.html" class="request-details btn btn-primary">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-outline-primary btn-sm dropdown-toggle request-manage" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Manage
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="" class="drop-item">Reschedule</a></li>
+                                                <li><a href="" class="drop-item">Message</a></li>
+                                                <li><a href="" class="drop-item">Dismiss</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 card ms-5 p-3 today-card">
+                                    <p class="request-id">Brenda, E <span class="text-muted">@embrenda</span></p>
+                                    <p class="request-title">Weekly Report</p>
+                        
+                                    <p class="supplementary"><span class="request-time">09:00</span> | <span class="request-duration">1hr
+                                            30min</span>
+                                    </p>
+                                    <br>
+                                    <div class="hstack gap-3 ms-auto">
+                                        <a href="camp-details.html" class="request-details btn btn-primary">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                        <div class="btn-group ">
+                                            <button class="btn btn-outline-primary btn-sm dropdown-toggle request-manage" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Manage
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="" class="drop-item">Reschedule</a></li>
+                                                <li><a href="" class="drop-item">Message</a></li>
+                                                <li><a href="" class="drop-item">Dismiss</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade bg-body-tertiary rounded shadow dash-nav2" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab" tabindex="0">
+                        <div class="pending">
+                            <div class="row justify-content-center">
+                        
+                                <div class="hstack">
+                                    <h3 class="today-head">Requests</h3>
+                        
+                                    <div class="btn-group ms-auto">
+                                        <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Layout Options
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="" class="drop-item">Grid</a></li>
+                                            <li><a href="" class="drop-item">Column</a></li>
+                                            <li><a href="" class="drop-item">Carousel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="col-12 recent-card mt-3">
+                                <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        
+                                    <div class="carousel-inner">
+                        
+                                        <div class="carousel-item active">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-8 card ms-auto me-auto">
+                                                <a class="pending-head" href="profile.html" style="text-decoration: none; color: #481380;">Lester</a>
+                                                    <p class="text-muted">@primelester55</p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="pending-date"><i class="fa-regular fa-circle me-2"></i> 15:00 | Wed, 27
+                                                                Apr</p>
+                                                            <p class="pending-duration"><i class="fa-regular fa-circle me-2"></i> 2hrs</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="dur-head" style="text-decoration: none;"><i class="fa-regular fa-circle me-2"></i> 
+                                                                <span>'Book Launch'</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details" style="text-decoration: none;">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl" style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg" style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-8 card ms-auto me-auto">
+                                                <a class="pending-head" href="profile.html" style="text-decoration: none; color: #481380;">Lester</a>
+                                                    <p class="text-muted">@primelester55</p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="pending-date"><i class="fa-regular fa-circle me-2"></i> 15:00 | Wed, 27
+                                                                Apr</p>
+                                                            <p class="pending-duration"><i class="fa-regular fa-circle me-2"></i> 2hrs</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="dur-head" style="text-decoration: none;"><i class="fa-regular fa-circle me-2"></i> 
+                                                                <span>'Book Launch'</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details" style="text-decoration: none;">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-8 card ms-auto me-auto">
+                                                <a class="pending-head" href="profile.html" style="text-decoration: none; color: #481380;">Lester</a>
+                                                    <p class="text-muted">@primelester55</p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="pending-date"><i class="fa-regular fa-circle me-2"></i> 15:00 | Wed, 27
+                                                                Apr</p>
+                                                            <p class="pending-duration"><i class="fa-regular fa-circle me-2"></i> 2hrs</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="dur-head" style="text-decoration: none;"><i class="fa-regular fa-circle me-2"></i> 
+                                                                <span>'Book Launch'</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details" style="text-decoration: none;">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade bg-body-tertiary rounded shadow dash-nav3" id="nav-inbox" role="tabpanel" aria-labelledby="nav-inbox-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <h3 class="inbox-head mb-5">Inbox</h3>
+
+                            <div class="col-8 mb-5">
+                        
+                                <form action="" class="recent-form">
+                        
+                                    <div class="hstack gap-5">
+                        
+                                        <div class="form-floating col-3">
+                                            <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                <option selected>All Day</option>
+                                                <option value="1">Morning</option>
+                                                <option value="2">Afternoon</option>
+                                                <option value="3">Evening</option>
+                                                <option value="3">Custom</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Period of Day</label>
+                                        </div>
+                        
+                                        <div class="form-floating col-5">
+                                            <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                <option selected>January: Week 1</option>
+                                                <option value="1">Today</option>
+                                                <option value="2">January: Week 2</option>
+                                                <option value="3">January: Week 3</option>
+                                                <option value="4">January: Week 4</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Timeline</label>
+                                        </div>
+                        
+                                        <div class="form-floating col-3">
+                                            <select class="form-select filter-stack" id="floatingSelectGrid">
+                                                <option selected>Last 50</option>
+                                                <option value="1">Last 100</option>
+                                                <option value="2">Last 200</option>
+                                                <option value="3">All Time</option>
+                                            </select>
+                                            <label for="floatingSelectGrid">Number</label>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </form>
+                        
+                            </div>
+                        
+                            <div class="col-12 recent-card">
+                        
+                                <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                        
+                                <div id="carouselExampleControls1" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        
+                                    <div class="carousel-inner">
+                        
+                                        <div class="carousel-item active">
+                        
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl" style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg" style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                        
+                                        </div>
+                        
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="col-12 recent-card">
+                        
+                                <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                        
+                                <div id="carouselExampleControls2" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        
+                                    <div class="carousel-inner">
+                                    
+                                        <div class="carousel-item active">
+                                    
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="col-12 recent-card">
+                        
+                                <h3 class="today-head mb-5">Today: 4 campFiRes</h3>
+                        
+                                <div id="carouselExampleControls3" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        
+                                    <div class="carousel-inner">
+                                    
+                                        <div class="carousel-item active">
+                                    
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <div class="p-3 mb-5 bg-body-tertiary rounded recent-card col-6 card ms-auto me-auto">
+                                                <h3 class="campfire-head">Game Night</p>
+                                                    <p class="text-muted">campFiRe made by <strong>Brenda @embrenda</strong></p>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="t-head">Time</p>
+                                                            <p class="recent-t">21:00</p>
+                                                        </div>
+                                                        <div class="col ms-auto">
+                                                            <p class="d-head">Duration</p>
+                                                            <p class="recent-d">2hr 30min</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <p class="d-head">Date</p>
+                                                            <p class="recent-date">Wed, 27 Apr</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <a href="request-details.html" class="p-details">Details <i
+                                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                        </div>
+                                                        <div class="col-12 mt-3">
+                                                            <button type="button" class="btn learn1 me-2"><i class="fa-regular fa-circle-check fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-danger me-2"><i class="fa-solid fa-xmark fa-xl"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary me-2"><i class="fa-solid fa-repeat fa-lg"
+                                                                    style="color: #f2f2f2;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade bg-body-tertiary rounded shadow dash-nav4 profile" id="nav-schedule" role="tabpanel" aria-labelledby="nav-schedule-tab" tabindex="0">
+                        <div class="mb-2 mt-3">
+                        
+                            <div class="row justify-content-center">
+                        
+                                <h3 class="schedule-head mb-5">Schedule</h3>
+                        
+                                <div class="row justify-content-center">
+                        
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm mb-3 mt-3">
+                                        <p class="day" style="color: #481830 !important;">Mon</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire me-2"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent me-2"></i> Lower probability of accepting requests
+                                            today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line me-2"></i> Most availible between
+                                            09:00
+                                            and 12:00
+                                        </p>                        
+                                    </div>
+                                      
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm ms-5 mb-3 mt-3">
+                                        <p class="day">Tue</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                        
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm mb-3 mt-3">
+                                        <p class="day">Wed</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                        
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm ms-5 mb-3 mt-3">
+                                        <p class="day">Thu</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                        
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm mb-3 mt-3">
+                                        <p class="day">Fri</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                        
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm ms-5 mb-3 mt-3">
+                                        <p class="day">Sat</p>
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                    
+                                    <div class="col-5 bg-body-tertiary rounded shadow-sm mb-3 mt-3">
+                                        <p class="day">Sun</p>
+                        
+                                        <p class="date text-muted">7/03/24</p>
+                                        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-4">
+                        
+                                        <p class="camp-nos"><i class="fa-solid fa-fire"></i> 4 campFiRes</p>
+                                        <p class="probability"><i class="fa-solid fa-percent"></i> Lower probability of accepting requests today
+                                            (31%)</p>
+                                        <p class="availability"><i class="fa-solid fa-tent-arrow-down-to-line"></i> Most availible between 09:00
+                                            and 12:00
+                                        </p>
+                                    </div>
+                        
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr style="color: #481830; width: 50%;" class="ms-auto me-auto mb-4 mt-5">
+
+        <h4 class="foot-brief">campFiRe version 1.00 . All rights reserved. © 2023 campFiRe inc.</h4>
+
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const collapseElementList = document.querySelectorAll('.collapse')
+        const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>
